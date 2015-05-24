@@ -23,6 +23,8 @@
 int wildmat (const char *text, const char *p);
 #endif
 
+#pragma warning(disable: 4996)
+
 /*****************************************************************************/
 
 int analyze_case( const char* in, int inl )
@@ -152,7 +154,7 @@ char** find_files( const char* dir, const char *wc, int dirs_or_files )
 		return NULL;
 
 #ifdef USE_WILDMAT
-	wclwr = strlwr(strdup(wc));
+	wclwr = _strlwr(strdup(wc));
 #endif
 
 	spul = NULL;
