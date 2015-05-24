@@ -51,7 +51,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#define VERSION				"v1.99c"
+#define VERSION			"v1.99x"
 
 #define _WILDCARD_SEPARATOR	','
 #define WILDCARD_ALL		"*"
