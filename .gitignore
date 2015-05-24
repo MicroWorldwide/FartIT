@@ -6,3 +6,8 @@ Release
 *.tmp
 *.obj
 *.o
+
+# Visual Studio Files
+
+*.suo
+*.sdf
