@@ -863,7 +863,7 @@ int for_all_files_recursive( const char *dir, const char* wc, file_func_t _ff )
 			continue;
 		}
 		// Don't recurse into git directories
-		if (_SVN && strcmp(spul[t],".git")==0)
+		if (_GIT && strcmp(spul[t],".git")==0)
 		{
 			if (_Verbose)
 				ERRPRINTF2( "FART: skipping git dir %s%s\n",dir, spul[t] );
